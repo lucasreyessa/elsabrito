@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="website icon"  type="png" href="P.E.B-removebg-preview.png">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: rgb(160,214,180);
+            background: linear-gradient(90deg, rgba(160,214,180,1) 0%, rgba(127,179,213,1) 35%, rgba(211,211,211,1) 100%);
+        }
+        header {
+            background-color: #979797;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1{
+            font-size: 30px;
+            font-weight: 900;
+            font-family: cursive;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        .p1 {
+    font-size: 30px;
+    font-weight: 900;
+   
+}
+h1{
+    color: rgb(255, 187, 0);
+    text-shadow: 1px 1px 2px black;}
+nav{
+    text-decoration: none;
+    height: 100%;
+}
+
+nav > ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* background-color: #000000; */
+    background: transparent;
+    text-align: center;
+    padding-top: 25px;
+    position: relative;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+nav  ul  li {
+    display: inline;
+    height: 100%;
+    list-style: none;
+    position: relative;
+    text-decoration: none;
+    /* float: left; */
+}
+
+nav > ul > li >  a {
+    text-align: right;
+    /* width: 100%;
+    height: 100%; */
+    display: block;
+    /* align-items: flex-end ; */
+    padding: 10px 30px;
+    color: #ffbb00;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15x;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 300ms ease ;
+    padding-left: 30px;
+    text-shadow: 1px 1px 2px black;
+}
+nav  ul  li >  a:hover{
+    visibility: visible;
+}
+
+  .desplegable {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: black;
+    display: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  
+
+}
+
+nav > ul > li > a:hover {
+    transform: scale(1.1);
+    color: black;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0,5) ;
+} 
+nav ul a .maestra{
+    font-size: 30px;
+}
+
+/* submenu */
+/* nav ul li ul ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: #000000;
+    position: absolute;
+    float: left;
+    top: 90px; 
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 1;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0,5);
+    z-index: 10;
+} */
+#desplegable {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: black;
+    display: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  visibility: visible;
+  overflow: visible;
+
+}
+
+
+nav ul li  :hover ul{
+    /* visibility: visible; */
+    opacity: 1;
+    top:  70px;
+    background: #ff0000;
+}
+nav ul li ul::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid transparent white;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: 12px;
+    left: 70px;
+
+}
+
+
+nav ul li ul li a{
+   visibility: hidden;
+    display: block;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    padding: 2px;
+    margin-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms case;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+nav ul li ul li a:hover{
+    color: black;
+    visibility: visible;
+    transform: scale(1,1);
+    padding-left: 30px;
+    font-size: 14px; 
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0,5);
+} 
+
+    </style>
+</head>
+<body>
+    <nav class="#menu"> 
+       
+   
+        <ul>    
+           <h1 class="p1"> Politecnico Elsa Brito </h1>
+    
+            <li><a href="#">Inicio</a></li>
+            <li><a href="Quis.htmls">Quienes Somos?</a> </li>
+            <li><a href="#">Areas tecnicas</a> <i class="bi bi-arrow-down"></i>
+                <ul class="desplegable">
+                    <li><a href="#">Informatica</a></li>
+                    <li><a href="#">Enfermeria</a></li>
+                    <li><a href="#">Farmacia</a></li>
+                    <li><a href="#">Electricidad</a></li>
+                    <li><a href="#">Mecatronica</a></li>
+                    <li><a href="#">Gestion Adm. y tributaria</a></li>
+                    <li><a href="#">Telecomunicaciones</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Perfil de engresados</a>
+                <ul id="desplegable">
+                    <li><a href="#">Informatica</a></li>
+                    <li><a href="#">Enfermeria</a></li>
+                    <li><a href="#">Farmacia</a></li>
+                    <li><a href="#">Electricidad</a></li>
+                    <li><a href="#">Mecatronica</a></li>
+                    <li><a href="#">Gestion Adm. y tributaria</a></li>
+                    <li><a href="#">Telecomunicaciones</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav> 
+
+        </div>
+
+<header>
+    <h1>Contacto</h1>
+</header>
+
+<form action="enviar.php" method="post">
+    <label for="nombre">Tu Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <label for="email">Correo electrónico:</label>
+    <input type="text" id="email" name="email" required>
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
