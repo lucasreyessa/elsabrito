@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quienes somos?</title>
+  <link rel="website icon"  type="png" href="P.E.B-removebg-preview.png">
+
+</head>
+<body>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(188,255,213);
+    /* background: linear-gradient(90deg, rgba(188,255,213,1) 0%, rgba(255,255,255,1) 100%);  */
+font-family: Raleway, sans-serif;
+  display: ruby-text;
+  align-items: center;  
+  min-height: 100vh;
+  background-color: #ddd;
+}
+.p1{
+    display: inline-block;
+    color: #000000;
+    bottom: 30px;
+    padding: 21px 20px 21px 40px;
+    color: #df1410;
+    text-shadow: 1px 2px 3px black;
+    font-weight: 700;
+    font-size: 28px;
+}
+a {
+  color: #31fb5a;
+}
+
+
+#container {
+  margin: 0 auto;
+}
+
+p {
+  text-align: center;
+}
+
+nav {
+  margin: 0 auto;
+  height: 100%;
+  background-color: transparent;
+  /* box-shadow: 0px 3px 20px 3px #3380d2; */
+}
+
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    position: relative;
+    text-align: center;
+    display: flex;
+    z-index:  1;
+}
+  
+nav ul li {
+  display:inline-block;
+  background-color: transparent;
+  }
+
+  nav a {
+  display: flex;
+  padding:14px 20px; 
+  color:#000;
+  font-size:15px;
+  line-height: 50px;
+  text-decoration:none;
+  font-weight: 700;
+  text-shadow: 1px 2px 3px #00529e;
+  transition: all 300ms ease ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: baseline;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding-right: 18px;
+  
+}
+
+
+nav a:hover { 
+  color: #00529e; 
+  transform: scale(1.1);
+  text-shadow: 1px 2px 3px #000;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+  display: none;
+  position: absolute; 
+  top: 60px; /* the height of the main nav */
+}
+  
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+  display:inherit;
+}
+  
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  width:150px;
+  float:none;
+  display:list-item;
+  position: relative;
+}
+
+/* Second, Third and more Tiers */
+nav ul ul ul li {
+  position: relative;
+  top:-60px; 
+  left:170px;
+}
+
+  
+i {
+    border: solid rgb(0, 0, 0);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    margin: -7px 0 0px 7px;
+    vertical-align: middle;
+
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.card-container {
+  perspective: 60em;
+  margin-right: 10%;
+  padding: 10px;
+  display: inline-block;
+  &:nth-child(1) { --bi: repeating-linear-gradient(30deg, #111 0 0.25em, #333 0 1em); }
+  /* &:nth-child(2) { --bi: linear-gradient(#555 5em, #ffbb00 3em), linear-gradient(60deg, #880E4F, #1A237E); } */
+}
+
+.card {
+  position: relative;
+  width: 410px;
+  padding: 4em;
+  color: #000;
+  background: transparent;
+  text-shadow: 1px 1px 1px #ffbb00;
+  transform: rotateY(15deg) rotateX(15deg);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  
+  &:hover {
+    transform: rotateY(-30deg) rotateX(-15deg);
+  }
+}
+
+.layers {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.layer {
+  position: absolute;
+  left: 0;
+   top: 0;
+  width: 100%; 
+  height: 100%;
+  border-radius: 1.5em;
+  background-image: var(--bi);
+  transform: translateZ(var(--tz));
+  box-shadow: 0 0 0.5em #ffbb00 inset;
+  
+@for $i from 0 to 10 {                                                                                            
+    &:nth-child(#{$i + 1}) {
+      --tz: #{$i * -4}px;
+    }
+  }
+  
+  &:last-child {
+    box-shadow: 0 0 0.5em #000d inset, 0 0 5px #000;
+  }
+}
+</style>
+
+
+<div id="container">
+  <nav>
+      <ul>
+        <h1 class="p1">Politecnico Elsa Brito</h1>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#">Quienes somos?</a> </li>
+<!-- <i class="down"></i></a> -->
+          <!-- Primer Menu Desplegable -->
+          <!-- <ul>
+              <li><a href="#">Diseño Web</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Wordpress</a></li>
+          </ul>         -->
+          <li><a href="#">Areas Tecnicas <i class="down"></i></a>
+           <!-- Primer Menu Desplegable -->
+          <ul>
+              <li><a href="inf22.html">Informatica</a></li>
+              <li><a href="enf22.html">Enfermeria</a></li>
+              <li><a href="farmcaica.html">Farmacia</a></li>
+              <li><a href="#">Mecatronica</a></li>
+              <li><a href="#">Electricidad</a></li>
+              <li><a href="#">Contabilidad</a></li>
+              <li><a href="#">Telecomunicaciones</a></li>
+          </ul>
+              <li><a href="blog.html">Blog </a></li>
+              <li><a href="#">Contacto </i></a>
+             <!-- Segudo Menu Desplegable -->
+             <li><a href="#">Perfil de Engresados <i class="down"></i></a>
+                <ul>
+                    <li><a href="inf.html">Informatica</a></li>
+                    <li><a href="enf.html">Enfermeria</a></li>
+                    <li><a href="farmacia.html">Farmacia</a></li>
+                    <li><a href="mecatronica.html">Mecatronica</a></li>
+                    <li><a href="electricidad.html">Electricidad</a></li>
+                    <li><a href="contabilidad.html">Contabilidad</a></li>
+                    <li><a href="telecomunicaciones.html">Telecomunicaciones</a></li>
+                </ul>
+                          
+                  </li>
+              </ul>
+              </li>
+          </ul>
+          </li>
+         
+      </ul>
+  </nav>
+
+<!-- <section><div class="container">
+  <div class="column">
+    <h2>VISIÓN DEL POLITÉCNICO MAESTRA ELSA BRITO DE DOMINGUEZ </h2>
+    <p>Ser reconocida en la República Dominicana como la
+      institución educativa técnico profesional por excelencia,
+       donde los/las estudiantes desarrollen su potencial cognitivo,
+        convirtiéndose en personas virtuosas que contribuyen a la
+        construcción de una sociedad más justa, solidaria y equitativa,
+        participando activamente en la producción y en el desarrollo del
+        país.</p></div>
+  <div class="column">
+    <h2>MISIÓN DEL POLITÉCNICO MAESTRA ELSA BRITO DE DOMINGUEZ</h2>
+    <P>Somos una institución educativa pública cuya finalidad es formar
+       individuos íntegros con alto nivel de desempeño en competencias
+        técnicas que les permite elevar su nivel de vida y contribuir
+         al desarrollo de la comunidad en la cual se desenvuelven,
+          insertados en el campo laboral.</P>  </div>
+  <div class="column">
+    <h2>DESCRIPCIÓN DEL CENTRO</h2>
+  <P>El Politécnico México es una institución de carácter público se
+     caracteriza por la educación formal en la modalidad técnico
+      profesional. Pertenece al distrito educativo 04, Regional 08.
+<br>
+    El centro está ubicado en el municipio de Santiago, Santiago Rep. Dom.
+    Limita al: <br>
+    Al Norte: Av. Salvador Estrella Sadhalá. <br>
+     Al Sur: Calle 1, sector Camboya <br>
+     Al este: carretera Hermanos Perozo br
+     Al Oeste: Calle 3, sector Camboya <br>
+    El Politécnico ofrece a la comunidad una educación integral
+     de calidad en el nivel media General (1ro. y 2do.) grado
+      y modalidad técnico-profesional (3er y 4to) grado.
+    </P>  </div>
+</div>
+</section> -->
+
+
+
+<div class="card-container">
+  <div class="card">
+    <h3>VISIÓN DEL POLITÉCNICO MAESTRA ELSA BRITO DE DOMINGUEZ</h3><br>
+    <p>Ser reconocida en la República Dominicana como la
+      institución educativa técnico profesional por excelencia,
+       donde los/las estudiantes desarrollen su potencial cognitivo,
+        convirtiéndose en personas virtuosas que contribuyen a la
+        construcción de una sociedad más justa, solidaria y equitativa,
+        participando activamente en la producción y en el desarrollo del
+        país.</p>
+    <div class="layers">
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>   
+    </div>
+  </div> 
+</div>
+
+<div class="card-container">
+  <div class="card">
+    <h3>DESCRIPCIÓN DEL CENTRO</h3><br>
+    <p>El Politécnico México es una institución de carácter público se
+      caracteriza por la educación formal en la modalidad técnico
+       profesional. Pertenece al distrito educativo 04, Regional 08.
+ <br>
+     El centro está ubicado en el municipio de Santiago, Santiago Rep. Dom.
+     Limita al: <br>
+     Al Norte: Av. Salvador Estrella Sadhalá. <br>
+      Al Sur: Calle 1, sector Camboya <br>
+      Al este: carretera Hermanos Perozo br
+      Al Oeste: Calle 3, sector Camboya <br>
+     El Politécnico ofrece a la comunidad una educación integral
+      de calidad en el nivel media General (1ro. y 2do.) grado
+       y modalidad técnico-profesional (3er y 4to) grado</p>
+    <div class="layers">
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>   
+    </div>
+  </div> 
+</div>
+
+</body>
+</html>

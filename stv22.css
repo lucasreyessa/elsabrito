@@ -1,0 +1,142 @@
+/* Estilos para el encabezado */
+header {
+  background-color: #141CB9;
+  color: white;
+  padding:50px;
+  display: flex;
+
+
+  }
+
+
+
+
+
+
+
+
+h1 {
+  margin: right;
+  font-size: 40px; 
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+nav li {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #333;
+}
+
+/* Estilos para las secciones */
+section {
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+h2 {
+
+  font-size: 2em;
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color:#141CB9;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para enlaces */
+a {
+  color: #0077CC;
+}
+
+a:hover {
+  color: #004499;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+  border-bottom: 2px solid #141CB9; /* Cambiar a #141CB9 */
+  color: black; /* Cambiar a blanco */
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  font-weight: bold;
+  border-bottom: 2px solid #141CB9; /* Cambiar a #141CB9 */
+  color: black; /* Cambiar a blanco */
+
+  }
+
+img{
+  width: 700px;
+}
+
+#contenedor{
+  width: 600px;
+  margin: 30px auto;
+  overflow: hidden;
+
+}
+
+#contenedor ul{
+  list-style: none;
+  width: 400px;
+  display: flex;
+
+
+  animation: slide 20s infinite alternate;
+
+}
+
+
+@keyframes slide {
+    0% {margin-left: 0px;}
+    10%{margin-left: 0px;}
+
+
+    25%{margin-left: -700px;}
+    45%{margin-left: -700px;}
+
+    50%{margin-left: -1400px;}
+    70%{margin-left: -1400px;}
+
+
+   75%{margin-left: -2100px;}
+   100%{margin-left: -2100px;}
+}

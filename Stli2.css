@@ -1,0 +1,23 @@
+#pagina{
+width: 1200px;
+margin:auto ;
+border: 2px solid red;
+
+}
+
+
+h1{
+	font-family: "Comic Sans MS", cursive;
+	font-size: 30px;
+	color: #F887E1;
+}
+p{
+	font-size: 20px;
+}
+
+#primera-seccion
+{
+font-family: "Comic Sans MS", cursive;
+	font-size: 30px;
+	color: #FF0000;
+}
